@@ -124,8 +124,8 @@ input {
 .user-info{
     display: flex;
     justify-content: end;
-    align-items: center;
     gap: 30px;
+    align-items: center;
     padding-right: 100px;
 }
 
@@ -207,4 +207,68 @@ span{
 /*Main Section*/
 .main{
     background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
 }
+
+.annoucements, .trending{
+    border: 2px solid blue;
+}
+
+.projects{
+    grid-row: span 2;
+}
+
+.projects > h2{
+    padding-left: 30px;
+    margin-bottom: -10px;
+}
+
+.cards{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Roboto';
+    font-weight: 500;
+    grid-column: span 2;
+    font-size: 1.3rem;
+}
+
+
+.card{
+    background-color: #ffff;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid #F0B429;
+}
+
+.card>p{
+    color: #828181;
+    margin-top: -12px;
+    height: 100%;
+}
+
+.card-icons{
+    justify-self: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.card-icons > svg{
+    height: 40px;
+    width: 40px;
+}
+
+
+/*Announcements Section*/
