@@ -6,7 +6,6 @@ html {
 }
 
 .grid-container {
-    width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -211,10 +210,6 @@ span{
     grid-template-columns: 4fr 1.5fr;
 }
 
-.annoucements, .trending{
-    border: 2px solid blue;
-}
-
 .projects{
     grid-row: span 2;
 }
@@ -229,7 +224,7 @@ span{
     height: 800px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -272,3 +267,25 @@ h2{
 
 
 /*Announcements Section*/
+
+.announcements > h2{
+    padding-left: 30px;
+    margin-bottom: -10px;
+}
+.news{
+    background-color: #ffff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+    display: grid;
+}
+
+.new >p{
+    margin-top: -15px;
+    color: #828181;
+    font-size: smaller;
+}
+
+.new > h3{
+    font-size: 1rem;
+}
